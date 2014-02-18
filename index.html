@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+  </head>
+  <body>
+    <nav id="nav" role="navigation">
+      <a href="#nav" title="Show navigation">Show navigation</a>
+      <a href="#" title="Hide navigation">Hide navigation</a>
+      <ul>
+        <li>
+	  <a href="#" aria-haspopup="true"><span>Send</span></a>
+	  <ul>
+	    <li><a href="#">Parcel</a></li>
+            <li><a href="#">Return</a></li>
+	  </ul>
+	</li>
+	<li>
+	  <a href="#" aria-haspopup="true"><span>Find</span></a>
+	  <ul>
+            <li><a href="#">My Parcel</a></li>
+	    <li><a href="#">Local Store</a></li>
+	  </ul>
+	</li>
+	<li><a href="#">Sign in</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+    <section class="content">
+      blah blah ablah blah balh
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Stuff</a></li>
+      </ul>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/dbltaptogo.js"></script>
+    <script>
+      $( function() {
+        $('nav li:has(ul)').doubleTapToGo();
+      });
+    </script>
+  </body>
+</html>
